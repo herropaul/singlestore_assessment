@@ -4,36 +4,78 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./index.css">
-        <script src="https://kit.fontawesome.com/25024f1218.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div>
-            <!-- Nav bar -->
-            <div class="page-header"> 
-                <img alt="logo" src="assets/singlestore_logo.png">
-            </div>
-            <!--
-            <div class="icon-container"> 
-                <div class='circle'>
-                    <i class="fa-solid fa-calendar-days"></i>
-                </div>
-            </div>
-            -->
-            <!-- Form -->
-            <div class="center-form">
-                <form>
-                        
-                </form>
-            </div>  
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/25024f1218.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <div class="page-header">
+      <img alt="logo" src="assets/singlestore_logo.png" />
+    </div>
 
-        </div>  
-        <script src="" async defer></script>
-    </body>
+    <!-- Form -->
+    <div class="form-container">
+      <div class="circle">
+        <i class="fa-solid fa-calendar-days"></i>
+      </div>
+      <h2>Book a Demo</h2>
+      <p>
+        Help us customize your demo by answering the following questions below.
+      </p>
+      <form id="business-info">
+        <!-- Email input -->
+        <div class="input-container">
+          <label for="inputEmail">Business Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your business email"
+          />
+        </div>
+        <!--Business sizes dropdown-->
+        <div class="input-container">
+          <label for="inputSize">Business Size</label>
+          <input
+            list="business-sizes"
+            name="business-size"
+            placeholder="Select Size"
+          />
+          <datalist id="business-sizes">
+            <option value="1-10"></option>
+            <option value="11-15"></option>
+            <option value="51-100"></option>
+            <option value="101-250"></option>
+            <option value="250-1000"></option>
+            <option value="1000+"></option>
+          </datalist>
+        </div>
+        <label for="questions">
+          What is the most important thing to you in a solution?
+        </label>
+        <div class="column-container">
+          <div class="col">
+            <div>
+              <input type="radio" name="flexRadioDefault" />
+              <label for="flexRadaioDefault1">Default Radio</label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- End of Form -->
+    </div>
+    <script src="" async defer></script>
+  </body>
 </html>
